@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-30 21:27+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\class\models.py:6 .\students\models.py:23 .\students\models.py:36
+#: .\teacher\models.py:13
+msgid "Name"
+msgstr "Имя"
+
+#: .\class\models.py:7 .\students\models.py:24 .\students\models.py:37
+msgid "Enter name"
+msgstr "Введите имя"
+
+#: .\class\models.py:8 .\students\models.py:27 .\students\models.py:41
+#: .\teacher\models.py:16
+msgid "Phone number"
+msgstr "Номер телефона"
+
+#: .\class\models.py:8 .\students\models.py:27 .\students\models.py:41
+#: .\teacher\models.py:16
+msgid "Enter phone number"
+msgstr "Введите номер телефона "
+
+#: .\class\models.py:9
+msgid "About tuitor"
+msgstr "O классном руководителе"
+
+#: .\class\models.py:9
+msgid "Enter about tuitor"
+msgstr "Введите информацию о классном руководителе"
+
+#: .\class\models.py:14
+msgid "Tuitor "
+msgstr "классный руководитель"
+
+#: .\class\models.py:15
+msgid "Tuitors "
+msgstr "классный руководитель"
+
+#: .\class\models.py:17
+msgid "Class name"
+msgstr "Имя класса"
+
+#: .\class\models.py:17
+#, fuzzy
+msgid "Enter class name"
+msgstr "Введите название класса"
+
+#: .\class\models.py:20
+msgid "Lesson time"
+msgstr "Время урока "
+
+#: .\class\models.py:20
+#, fuzzy
+msgid "Enter lesson time"
+msgstr "Введите название класса"
+
+#: .\class\models.py:25 .\class\models.py:26
+msgid "Classroom "
+msgstr "Kласс"
+
+#: .\mocktest\models.py:7
+msgid "Date"
+msgstr "Время"
+
+#: .\mocktest\models.py:8
+#, fuzzy
+#| msgid "Teacher "
+msgid "Teacher"
+msgstr "Учитель"
+
+#: .\mocktest\models.py:9 .\teacher\models.py:5
+msgid "Subject"
+msgstr "Предмет"
+
+#: .\mocktest\models.py:10
+msgid "Results file(Excel)"
+msgstr ""
+
+#: .\project\settings.py:122
+msgid "Russian"
+msgstr "Русский"
+
+#: .\project\settings.py:123
+msgid "English"
+msgstr "Английский"
+
+#: .\project\settings.py:189
+msgid "Home"
+msgstr "Главная "
+
+#: .\project\settings.py:192 .\project\settings.py:207
+msgid "Support"
+msgstr "Поддерживать"
+
+#: .\students\models.py:25
+msgid "Region"
+msgstr "Область"
+
+#: .\students\models.py:25
+msgid "Choose region"
+msgstr "Выберите регион"
+
+#: .\students\models.py:26 .\students\models.py:39
+msgid "Address"
+msgstr "Адрес"
+
+#: .\students\models.py:26 .\students\models.py:39
+msgid "Enter address"
+msgstr "Введите адрес"
+
+#: .\students\models.py:32
+msgid "Parent "
+msgstr "Родитель "
+
+#: .\students\models.py:33
+msgid "Parents "
+msgstr "Родители "
+
+#: .\students\models.py:40
+msgid "Image"
+msgstr "Изображение"
+
+#: .\students\models.py:40
+msgid "Upload image"
+msgstr "Загрузить изображение"
+
+#: .\students\models.py:54
+msgid "Student "
+msgstr "Студент "
+
+#: .\students\models.py:55
+msgid "Students "
+msgstr "Студент "
+
+#: .\teacher\models.py:5
+#, fuzzy
+#| msgid "Enter name"
+msgid "Enter subject name"
+msgstr "Введите имя"
+
+#: .\teacher\models.py:10
+msgid "Subject "
+msgstr "Предмет"
+
+#: .\teacher\models.py:11
+msgid "Subjects "
+msgstr "Предметы"
+
+#: .\teacher\models.py:13
+#, fuzzy
+#| msgid "Enter name"
+msgid "Enter teacher name"
+msgstr "Введите имя"
+
+#: .\teacher\models.py:26
+msgid "Teacher "
+msgstr "Учитель"
+
+#: .\teacher\models.py:27
+msgid "Teachers "
+msgstr "Учителя"
