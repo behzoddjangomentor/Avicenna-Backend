@@ -15,6 +15,11 @@ class FanTestView(APIView):
         result = FanTest.objects.filter(Q(test_kodi = test_kodi) & Q(tel=tel))
         serializer = FanTestSerializer(result,many=True)
         return Response(serializer.data,status=status.HTTP_200_OK)
+class FanTestAllView(APIView):
+    def get(self,request,test_kodi):
+        result = FanTest.objects.filter(test_kodi=test_kodi)
+        serializer = FanTestSerializer(result,many=True)
+        return Response(serializer.data,status=status.HTTP_200_OK)
 
 
 class BlokTestlarView(APIView):
@@ -55,6 +60,3 @@ class GetTeacherCount(APIView):
         }
         return Response(data=data,status=status.HTTP_200_OK)
 
-class LastTestResult(ModelViewSet):
-    queryset = FanTest.objects.order_by('-id')[:1]
-    serializer_class = FanTestSerializer
