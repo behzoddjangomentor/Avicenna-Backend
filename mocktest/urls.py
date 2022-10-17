@@ -3,12 +3,13 @@ from .views import BotUsersViewset,GetBotUserCount
 from teacher.views import FanTestView,BlokTestlarView,CheckIt,TestResultImage
 from payment.views import PaymentViewset
 from django.urls import path,include
-from teacher.views import GetTeacherCount
+from teacher.views import GetTeacherCount,LastTestResult
 from students.views import GetStudentCount,StudentInfo,StudentInfoViewset
 router = DefaultRouter()
 router.register('newuser',BotUsersViewset),
 router.register('studentinfoviewset',StudentInfoViewset),
-router.register('payment',PaymentViewset)
+router.register('payment',PaymentViewset),
+router.register('lasttest',LastTestResult)
 urlpatterns = [
     path('',include(router.urls)),
     path('fantest/<str:test_kodi>/<str:tel>/',FanTestView.as_view()),

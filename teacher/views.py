@@ -2,6 +2,7 @@ from django.http import JsonResponse
 from django.shortcuts import render
 from django.db.models import  Max
 # Create your views here.
+from rest_framework.viewsets import ModelViewSet
 from .models import FanTest,BlokTestlar,Teacher
 from django.db.models import Q
 from rest_framework.views import APIView
@@ -55,3 +56,6 @@ class GetTeacherCount(APIView):
         return Response(data=data,status=status.HTTP_200_OK)
 
 
+class LastTestResult(ModelViewSet):
+    queryset = FanTest.objectsl.all().last()
+    serializer_class = FanTestSerializer
