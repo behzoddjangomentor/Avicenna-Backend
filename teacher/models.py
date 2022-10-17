@@ -53,6 +53,7 @@ class FanTest(models.Model):
     fan_nomi = models.CharField(max_length=700)
     oquvchi = models.CharField(max_length=600)
     tel = models.CharField(max_length=700)
+    teacher = models.CharField(max_length=100,default="G'ulomov Azizbek")
     test_soni = models.IntegerField()
     togri_javoblar= models.IntegerField()
     sana = models.DateTimeField(auto_now_add=True)
