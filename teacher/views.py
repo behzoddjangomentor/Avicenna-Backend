@@ -55,7 +55,6 @@ class GetTeacherCount(APIView):
         }
         return Response(data=data,status=status.HTTP_200_OK)
 
-
 class LastTestResult(ModelViewSet):
-    queryset = FanTest.objectsl.all().last()
+    queryset = FanTest.objects.order_by('-id')[:1]
     serializer_class = FanTestSerializer
