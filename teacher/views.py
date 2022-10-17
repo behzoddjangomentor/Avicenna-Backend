@@ -10,6 +10,7 @@ from rest_framework import status
 from rest_framework.response import Response
 from django.shortcuts import get_object_or_404,get_list_or_404
 from .serilizer import *
+
 class FanTestView(APIView):
     def get(self,request,test_kodi,tel):
         result = FanTest.objects.filter(Q(test_kodi = test_kodi) & Q(tel=tel))
@@ -20,8 +21,6 @@ class FanTestAllView(APIView):
         result = FanTest.objects.filter(test_kodi=test_kodi)
         serializer = FanTestSerializer(result,many=True)
         return Response(serializer.data,status=status.HTTP_200_OK)
-
-
 class BlokTestlarView(APIView):
     def get(self, request,week_code):
         result = BlokTestlar.objects.filter(week_code=week_code).last()

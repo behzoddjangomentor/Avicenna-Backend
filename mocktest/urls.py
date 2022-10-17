@@ -15,6 +15,7 @@ urlpatterns = [
     path('fantest/<str:test_kodi>/<str:tel>/',FanTestView.as_view()),
     path('fantestall/<str:test_kodi>/',FanTestAllView.as_view()),
     path('bloktest/<str:week_code>/', BlokTestlarView.as_view()),
+    # path('testjson',FanTestAllViewTest.as_view()),
     path('checkfantest/<str:test_kodi>/', CheckIt.as_view()),
     path('getstudentcount/',GetStudentCount.as_view()),
     path('getbotusercount/',GetBotUserCount.as_view()),
