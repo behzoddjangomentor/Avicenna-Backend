@@ -18,7 +18,7 @@ class FanTestView(APIView):
         return Response(serializer.data,status=status.HTTP_200_OK)
 class FanTestAllView(APIView):
     def get(self,request,test_kodi):
-        result = FanTest.objects.filter(test_kodi=test_kodi)
+        result = FanTest.objects.filter(test_kodi=test_kodi).order_by('-togri_javoblar')
         serializer = FanTestSerializer(result,many=True)
         return Response(serializer.data,status=status.HTTP_200_OK)
 class BlokTestlarView(APIView):
