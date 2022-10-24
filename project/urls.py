@@ -9,8 +9,10 @@ urlpatterns = i18n_patterns(
 )
 urlpatterns +=[
     path('admin/',admin.site.urls),
-    path('api/v1/',include('mocktest.urls')),
-    path('api/v2/',include('class.urls'))
+    path('api/v1/',include('url.urls')),
+    path('api/v2/',include('class.urls')),
+    path('api/auth/',include('djoser.urls')),
+    path('api/auth',include('djoser.urls.authtoken')),
 
 ]
 urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

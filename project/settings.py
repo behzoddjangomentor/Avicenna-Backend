@@ -41,15 +41,29 @@ INSTALLED_APPS = [
     'students.apps.StudentsConfig',
     'class.apps.ClassConfig',
     'teacher.apps.TeacherConfig',
-    'mocktest.apps.MocktestConfig',
+    'url.apps.UrlConfig',
     'import_export',
     'payment.apps.PaymentConfig',
     'rest_framework',
+    'djoser',
+    'corsheaders',
+'rest_framework.authtoken',
 ]
+CORS_ALLOWED_ORIGINS = [
+    'http://127.0.0.1:8080',
+    'http://locahost:8080'
+]
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+
+    ]
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',

@@ -32,12 +32,6 @@ class CheckIt(APIView):
             return Response({"status":"OK"},status=status.HTTP_200_OK)
         else:
             return Response({"status": "BAD"}, status=status.HTTP_204_NO_CONTENT)
-# class CheckBlok(APIView):
-#     def get(self,request,test_kodi):
-#         if BlokTestlar.objects.filter(test_kodi = test_kodi).exists():
-#             return Response({"status":"OK"},status=status.HTTP_200_OK)
-#         else:
-#             return Response({"status": "BAD"}, status=status.HTTP_204_NO_CONTENT)
 import json
 class TestResultImage(APIView):
     def get(self,request,global_id):
