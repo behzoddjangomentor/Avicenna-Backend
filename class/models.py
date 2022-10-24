@@ -29,6 +29,7 @@ from students.models import Student
 class Davomat(models.Model):
     student = models.ForeignKey(Student,on_delete=models.CASCADE,to_field='one_id')
     date = models.DateField()
+    bool = models.BooleanField(default=False)
     sinf = models.ForeignKey(ClassRoom,on_delete=models.CASCADE)
     def __str__(self):
         return self.sinf.name
