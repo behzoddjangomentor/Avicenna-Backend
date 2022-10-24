@@ -51,7 +51,7 @@ INSTALLED_APPS = [
 ]
 CORS_ALLOWED_ORIGINS = [
     'http://127.0.0.1:8080',
-    'http://locahost:8080'
+    'http://localhost:8080'
 ]
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
