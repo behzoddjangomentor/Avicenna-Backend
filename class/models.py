@@ -24,3 +24,11 @@ class ClassRoom(models.Model):
         db_table = 'ClassRoom'
         verbose_name= _("Classroom ")
         verbose_name_plural = _("Classroom ")
+from students.models import Student
+# Create your models here.
+class Davomat(models.Model):
+    student = models.ForeignKey(Student,on_delete=models.CASCADE,to_field='one_id')
+    date = models.DateField()
+    sinf = models.ForeignKey(ClassRoom,on_delete=models.CASCADE)
+    def __str__(self):
+        return self.sinf.name

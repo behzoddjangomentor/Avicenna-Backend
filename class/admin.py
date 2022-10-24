@@ -4,7 +4,7 @@ from django.contrib import admin
 from url.models import BotUsers
 admin.site.register(BotUsers)
 from .models import *
-# admin.site.register(BotUsers)
+admin.site.register(Davomat)
 @admin.register(Tuitor)
 class TuitorAdmin(admin.ModelAdmin):
     list_display = ['name','phone']
