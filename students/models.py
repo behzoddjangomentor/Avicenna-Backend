@@ -46,6 +46,7 @@ class Student(models.Model):
     def image_show(self):
         return format_html('<img src = {} width="60" height="60" style="border-radius:50%;"'.format(self.image.url))
     def save(self, *args, **kwargs):
+        super(Student, self).save(*args, **kwargs)
         if self.id:
             self.one_id = self.id +1000
         super(Student, self).save(*args, **kwargs)
